@@ -1,3 +1,4 @@
+import 'package:appsekolah/widget/NavigationDrawerWidget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
           elevation: 7,
           shadowColor: Colors.black,
         ),
+        drawer: const NavigationDrawerWidget(),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           //color: Color.fromARGB(255, 246, 247, 249),
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
                   child: Material(
                     //color: Colors.blue,
                     elevation: 8,
-                    borderRadius: BorderRadius.circular(60),
+                    borderRadius: BorderRadius.circular(28),
                     clipBehavior: Clip.antiAlias,
                     child: InkWell(
                       splashColor: Colors.green,
@@ -44,8 +46,8 @@ class MyApp extends StatelessWidget {
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
                             color: Colors.transparent,
-                            //border: Border.all(color: Colors.blue, width: 1),
-                            borderRadius: BorderRadius.circular(60)),
+                            border: Border.all(color: Colors.blue, width: 1),
+                            borderRadius: BorderRadius.circular(28)),
                         child: const Column(
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -57,7 +59,7 @@ class MyApp extends StatelessWidget {
                             //   width: 100,
                             //   fit: BoxFit.cover,
                             // ),
-                            Icon(size: 50, Icons.book),
+                            Icon(size: 30, Icons.book),
                             SizedBox(
                               height: 6,
                             ),
