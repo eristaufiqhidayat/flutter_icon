@@ -39,7 +39,7 @@ class _menuLoginState extends State<menuLogin> {
                       splashColor: Colors.green,
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const MyApp(),
+                          builder: (context) => MyApp(),
                         ));
                       },
                       child: Container(
@@ -59,11 +59,162 @@ class _menuLoginState extends State<menuLogin> {
                             //   width: 100,
                             //   fit: BoxFit.cover,
                             // ),
-                            Icon(size: 30, Icons.book),
+                            Icon(
+                                size: 50, Icons.book, color: Colors.blueAccent),
                             SizedBox(
                               height: 6,
                             ),
-                            Text("Tabungan"),
+                            Text(
+                              "Raport",
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(
+                              height: 6,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Material(
+                    //color: Colors.blue,
+                    elevation: 8,
+                    borderRadius: BorderRadius.circular(28),
+                    clipBehavior: Clip.antiAlias,
+                    child: InkWell(
+                      splashColor: Colors.green,
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => MyApp(),
+                        ));
+                      },
+                      child: Container(
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            color: Colors.transparent,
+                            border: Border.all(color: Colors.blue, width: 1),
+                            borderRadius: BorderRadius.circular(28)),
+                        child: const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            // Ink.image(
+                            //   image: NetworkImage(
+                            //       'https://thefutureispublictransport.org/wp-content/uploads/2022/09/Story-C40-SiteImage_04.jpg'),
+                            //   height: 100,
+                            //   width: 100,
+                            //   fit: BoxFit.cover,
+                            // ),
+                            Icon(
+                                size: 50,
+                                Icons.museum_rounded,
+                                color: Colors.red),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text(
+                              "Tabungan",
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(
+                              height: 6,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Material(
+                    //color: Colors.blue,
+                    elevation: 8,
+                    borderRadius: BorderRadius.circular(28),
+                    clipBehavior: Clip.antiAlias,
+                    child: InkWell(
+                      splashColor: Colors.green,
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => MyApp(),
+                        ));
+                      },
+                      child: Container(
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            color: Colors.transparent,
+                            border: Border.all(color: Colors.blue, width: 1),
+                            borderRadius: BorderRadius.circular(28)),
+                        child: const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            // Ink.image(
+                            //   image: NetworkImage(
+                            //       'https://thefutureispublictransport.org/wp-content/uploads/2022/09/Story-C40-SiteImage_04.jpg'),
+                            //   height: 100,
+                            //   width: 100,
+                            //   fit: BoxFit.cover,
+                            // ),
+                            Icon(size: 50, Icons.calendar_month),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text(
+                              "Kalender Akademik",
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(
+                              height: 6,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Material(
+                    //color: Colors.blue,
+                    elevation: 8,
+                    borderRadius: BorderRadius.circular(28),
+                    clipBehavior: Clip.antiAlias,
+                    child: InkWell(
+                      splashColor: Colors.green,
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => MyApp(),
+                        ));
+                      },
+                      child: Container(
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            color: Colors.transparent,
+                            border: Border.all(color: Colors.blue, width: 1),
+                            borderRadius: BorderRadius.circular(28)),
+                        child: const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            // Ink.image(
+                            //   image: NetworkImage(
+                            //       'https://thefutureispublictransport.org/wp-content/uploads/2022/09/Story-C40-SiteImage_04.jpg'),
+                            //   height: 100,
+                            //   width: 100,
+                            //   fit: BoxFit.cover,
+                            // ),
+                            Icon(size: 50, Icons.people),
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text(
+                              "Data Siswa",
+                              textAlign: TextAlign.center,
+                            ),
                             SizedBox(
                               height: 6,
                             )

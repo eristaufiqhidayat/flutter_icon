@@ -28,7 +28,7 @@ class NavigationDrawerWidget extends StatelessWidget {
             //selected: _selectedIndex == 0,
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => const MyApp(),
+                builder: (context) => MyApp(),
               ));
             },
           ),
