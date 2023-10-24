@@ -1,3 +1,4 @@
+import 'package:appsekolah/pages/menuLogin.dart';
 import 'package:appsekolah/widget/NavigationDrawerWidget.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,19 @@ class MyApp extends StatelessWidget {
     Icons.calendar_month,
     Icons.book
   ];
+  final iconcolor = [
+    Colors.black,
+    Colors.blue,
+    Colors.yellow,
+    Colors.red,
+  ];
   final labels = ["Raport", "Tabungan", "Kalender", "Data"];
+  final module = [
+    const menuLogin(),
+    const menuLogin(),
+    const menuLogin(),
+    const menuLogin()
+  ];
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -28,8 +41,8 @@ class MyApp extends StatelessWidget {
           //color: Color.fromARGB(255, 246, 247, 249),
           child: GridView.builder(
               itemCount: iconmenu.length,
-              gridDelegate:
-                  SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3),
               itemBuilder: (BuildContext context, int index) {
                 return Column(
                   mainAxisSize: MainAxisSize.min,
@@ -44,7 +57,7 @@ class MyApp extends StatelessWidget {
                         child: InkWell(
                           onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => MyApp(),
+                              builder: (context) => module[index],
                             ));
                           },
                           // ignore: avoid_unnecessary_containers
@@ -61,7 +74,10 @@ class MyApp extends StatelessWidget {
                                   mainAxisSize: MainAxisSize.min,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Icon(size: 50, iconmenu[index]),
+                                    Icon(
+                                        size: 50,
+                                        iconmenu[index],
+                                        color: iconcolor[index]),
                                     const SizedBox(
                                       height: 6,
                                     ),
